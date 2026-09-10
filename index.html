@@ -9,25 +9,13 @@
   <meta name="description" content="Dataurum builds data analytics, business intelligence, ERP, software, automation, and AI solutions that help businesses turn data into measurable value.">
   <meta name="theme-color" content="#07111F">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Dataurum — Turning Data Into Business Value">
-  <meta property="og:description" content="Dataurum builds data analytics, business intelligence, ERP, software, automation, and AI solutions that help businesses turn data into measurable value.">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="en_US">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/styles.css">
-
-  <!-- EmailJS SDK (uncomment after setup) -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script> -->
 </head>
 
 <body>
@@ -37,8 +25,6 @@
        ============================================================ -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="nav__inner">
-
-      <!-- Logo -->
       <a href="#" class="nav__logo" aria-label="Dataurum — Home">
         <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <path d="M8 6h12c8.837 0 16 6.268 16 14s-7.163 14-16 14H8V6z" stroke="#F5F5F2" stroke-width="2.5" stroke-linejoin="round" fill="none"/>
@@ -49,7 +35,6 @@
         DATAURUM
       </a>
 
-      <!-- Desktop nav links -->
       <div class="nav__links">
         <a href="#solutions" class="nav__link">Solutions</a>
         <a href="#services" class="nav__link">Services</a>
@@ -57,10 +42,8 @@
         <a href="#contact" class="nav__link">Contact</a>
       </div>
 
-      <!-- Desktop CTA -->
-      <a href="#contact" class="nav__cta nav__cta-desktop">Start a Project</a>
+      <a href="#contact" class="nav__cta-desktop">Start a Project</a>
 
-      <!-- Mobile toggle -->
       <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span>
         <span></span>
@@ -68,16 +51,14 @@
       </button>
     </div>
 
-    <!-- Mobile overlay -->
     <div class="nav__mobile" aria-hidden="true">
-      <a href="#solutions">Solutions</a>
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-      <a href="#contact" class="nav__cta">Start a Project</a>
+      <a href="#solutions" class="mobile-link">Solutions</a>
+      <a href="#services" class="mobile-link">Services</a>
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+      <a href="#contact" class="mobile-link nav__cta">Start a Project</a>
     </div>
   </nav>
-
 
   <!-- ============================================================
        HERO
@@ -87,112 +68,95 @@
       <div class="hero__inner">
 
         <div class="hero__content">
-          <p class="eyebrow hero__eyebrow reveal">DATA &nbsp;•&nbsp; INTELLIGENCE &nbsp;•&nbsp; TECHNOLOGY</p>
-          <h1 class="hero__title reveal reveal-delay-1">Turning Data Into<br>Business <span class="text-gold">Value.</span></h1>
-          <p class="hero__description reveal reveal-delay-2">We build intelligent systems, analytics solutions, and digital infrastructure that help businesses understand their data, improve operations, and make better decisions.</p>
-          <div class="hero__actions reveal reveal-delay-3">
-            <a href="#solutions" class="btn btn-primary">Explore Our Solutions <span class="arrow">→</span></a>
+          <p class="eyebrow reveal">DATA &nbsp;•&nbsp; INTELLIGENCE &nbsp;•&nbsp; TECHNOLOGY</p>
+          <h1 class="hero__title reveal delay-1">Turning Data Into<br>Business <span class="text-gold">Value.</span></h1>
+          <p class="hero__description reveal delay-2">We build intelligent systems, analytics solutions, and digital infrastructure that help businesses understand their data, improve operations, and make better decisions.</p>
+          <div class="hero__actions reveal delay-3">
+            <a href="#solutions" class="btn btn-primary">Explore Solutions</a>
             <a href="#contact" class="btn btn-secondary">Talk to Dataurum</a>
           </div>
         </div>
 
-        <!-- Abstract geometric data visualization -->
-        <div class="hero__visual reveal reveal-delay-2">
-          <svg viewBox="0 0 520 480" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <!-- Grid background -->
-            <defs>
-              <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(154,165,181,0.06)" stroke-width="0.5"/>
-              </pattern>
-            </defs>
-            <rect width="520" height="480" fill="url(#grid)"/>
-
-            <!-- Horizontal data lines -->
-            <line x1="60" y1="120" x2="460" y2="120" stroke="rgba(154,165,181,0.08)" stroke-width="0.5"/>
-            <line x1="60" y1="200" x2="460" y2="200" stroke="rgba(154,165,181,0.08)" stroke-width="0.5"/>
-            <line x1="60" y1="280" x2="460" y2="280" stroke="rgba(154,165,181,0.08)" stroke-width="0.5"/>
-            <line x1="60" y1="360" x2="460" y2="360" stroke="rgba(154,165,181,0.08)" stroke-width="0.5"/>
-
-            <!-- Bar chart — ascending -->
-            <rect x="100" y="300" width="28" height="60" rx="2" fill="rgba(154,165,181,0.1)"/>
-            <rect x="148" y="260" width="28" height="100" rx="2" fill="rgba(154,165,181,0.12)"/>
-            <rect x="196" y="220" width="28" height="140" rx="2" fill="rgba(154,165,181,0.15)"/>
-            <rect x="244" y="190" width="28" height="170" rx="2" fill="rgba(201,164,92,0.15)"/>
-            <rect x="292" y="160" width="28" height="200" rx="2" fill="rgba(201,164,92,0.2)"/>
-            <rect x="340" y="130" width="28" height="230" rx="2" fill="rgba(201,164,92,0.3)"/>
-
-            <!-- Trend line -->
-            <polyline points="114,290 162,245 210,210 258,178 306,148 354,118" fill="none" stroke="#C9A45C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
-
-            <!-- Data nodes on trend line -->
-            <circle cx="114" cy="290" r="3.5" fill="#07111F" stroke="#C9A45C" stroke-width="1.5"/>
-            <circle cx="162" cy="245" r="3.5" fill="#07111F" stroke="#C9A45C" stroke-width="1.5"/>
-            <circle cx="210" cy="210" r="3.5" fill="#07111F" stroke="#C9A45C" stroke-width="1.5"/>
-            <circle cx="258" cy="178" r="3.5" fill="#07111F" stroke="#9AA5B5" stroke-width="1.5"/>
-            <circle cx="306" cy="148" r="4" fill="#07111F" stroke="#C9A45C" stroke-width="1.5"/>
-            <circle cx="354" cy="118" r="4.5" fill="#C9A45C" stroke="none"/>
-
-            <!-- Structured data table (top-right) -->
-            <rect x="380" y="60" width="120" height="16" rx="2" fill="rgba(154,165,181,0.06)"/>
-            <rect x="380" y="82" width="120" height="12" rx="1" fill="rgba(154,165,181,0.04)"/>
-            <rect x="380" y="100" width="120" height="12" rx="1" fill="rgba(154,165,181,0.04)"/>
-            <rect x="380" y="118" width="120" height="12" rx="1" fill="rgba(154,165,181,0.04)"/>
-            <rect x="380" y="136" width="80" height="12" rx="1" fill="rgba(201,164,92,0.1)"/>
-
-            <!-- Connection lines from table to chart -->
-            <line x1="380" y1="142" x2="354" y2="118" stroke="rgba(201,164,92,0.15)" stroke-width="0.5" stroke-dasharray="4 4"/>
-
-            <!-- Circular gauge element (bottom-right) -->
-            <circle cx="430" cy="320" r="50" fill="none" stroke="rgba(154,165,181,0.08)" stroke-width="1"/>
-            <circle cx="430" cy="320" r="38" fill="none" stroke="rgba(154,165,181,0.06)" stroke-width="0.5"/>
-            <path d="M 430 270 A 50 50 0 1 1 385 350" fill="none" stroke="#C9A45C" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
-            <text x="430" y="316" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="rgba(154,165,181,0.4)" font-weight="500">87%</text>
-            <text x="430" y="332" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="rgba(154,165,181,0.25)" letter-spacing="0.1em">EFFICIENCY</text>
-
-            <!-- Scattered data nodes (network) -->
-            <circle cx="80" cy="80" r="2" fill="rgba(154,165,181,0.2)"/>
-            <circle cx="160" cy="100" r="2" fill="rgba(154,165,181,0.15)"/>
-            <circle cx="80" cy="180" r="2" fill="rgba(154,165,181,0.15)"/>
-            <circle cx="450" cy="240" r="2" fill="rgba(201,164,92,0.3)"/>
-            <circle cx="380" cy="200" r="2" fill="rgba(154,165,181,0.15)"/>
-
-            <!-- Connecting lines between nodes -->
-            <line x1="80" y1="80" x2="160" y2="100" stroke="rgba(154,165,181,0.06)" stroke-width="0.5"/>
-            <line x1="160" y1="100" x2="114" y2="290" stroke="rgba(154,165,181,0.04)" stroke-width="0.5"/>
-            <line x1="380" y1="200" x2="450" y2="240" stroke="rgba(154,165,181,0.06)" stroke-width="0.5"/>
-            <line x1="450" y1="240" x2="430" y2="270" stroke="rgba(201,164,92,0.08)" stroke-width="0.5"/>
-
-            <!-- Small metric box (left) -->
-            <rect x="60" y="400" width="100" height="48" rx="3" fill="rgba(154,165,181,0.04)" stroke="rgba(154,165,181,0.08)" stroke-width="0.5"/>
-            <text x="72" y="420" font-family="Inter, sans-serif" font-size="7" fill="rgba(154,165,181,0.3)" letter-spacing="0.08em">GROWTH</text>
-            <text x="72" y="438" font-family="Inter, sans-serif" font-size="14" fill="rgba(201,164,92,0.5)" font-weight="600">+34.2%</text>
-
-            <!-- Small metric box (center) -->
-            <rect x="180" y="400" width="100" height="48" rx="3" fill="rgba(154,165,181,0.04)" stroke="rgba(154,165,181,0.08)" stroke-width="0.5"/>
-            <text x="192" y="420" font-family="Inter, sans-serif" font-size="7" fill="rgba(154,165,181,0.3)" letter-spacing="0.08em">PROCESSES</text>
-            <text x="192" y="438" font-family="Inter, sans-serif" font-size="14" fill="rgba(154,165,181,0.35)" font-weight="600">1,247</text>
-          </svg>
+        <div class="hero__visual reveal delay-2">
+          <div class="hero__visual-inner">
+            <div class="viz-grid"></div>
+            <div class="viz-circle viz-circle-1"></div>
+            <div class="viz-circle viz-circle-2"></div>
+            <div class="viz-circle viz-circle-3">
+              <div class="viz-node"></div>
+            </div>
+            <div class="viz-center">DATA</div>
+          </div>
         </div>
 
       </div>
     </div>
   </section>
 
-
   <!-- ============================================================
-       BRAND STATEMENT
+       BRAND PHILOSOPHY
        ============================================================ -->
-  <section class="section brand-statement" id="brand-statement">
+  <section class="section philosophy section--alt" id="brand">
     <div class="container container--narrow">
-      <h2 class="brand-statement__headline reveal">
-        <span class="line">Data is everywhere.</span>
-        <span class="line">Value is not.</span>
+      <h2 class="philosophy__headline reveal">
+        <span>Data is everywhere.</span>
+        <span class="highlight">Value is not.</span>
       </h2>
-      <div class="gold-divider reveal reveal-delay-1" style="margin: 2rem auto;"></div>
-      <p class="brand-statement__text reveal reveal-delay-2">We turn raw information into systems, insights, and decisions that move businesses forward.</p>
+      <div class="gold-divider reveal delay-1" style="margin-left: auto; margin-right: auto;"></div>
+      <p class="philosophy__text reveal delay-2">We turn raw information into systems, insights, and decisions that move businesses forward.</p>
     </div>
   </section>
 
+  <!-- ============================================================
+       PROBLEMS WE SOLVE
+       ============================================================ -->
+  <section class="section" id="problems">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">The Challenge</span>
+        <h2>Your business has the data.<br>Can you use it?</h2>
+        <p>Most businesses don’t have a data problem. They have a visibility, systems, and decision-making problem.</p>
+      </div>
+
+      <div class="problems-grid">
+        <div class="problem-card reveal delay-1">
+          <h3 class="problem-card__title">Manual Reporting</h3>
+          <p class="problem-card__desc">Hours spent compiling spreadsheets and preparing reports across isolated teams.</p>
+          <div class="problem-card__solution">
+            <strong>Solution</strong>
+            Turn repetitive reporting into automated dashboards and management insights.
+          </div>
+        </div>
+
+        <div class="problem-card reveal delay-2">
+          <h3 class="problem-card__title">Disconnected Operations</h3>
+          <p class="problem-card__desc">Sales, inventory, finance, and operations living in completely separate systems.</p>
+          <div class="problem-card__solution">
+            <strong>Solution</strong>
+            Connect your business through centralized, unified digital systems.
+          </div>
+        </div>
+
+        <div class="problem-card reveal delay-1">
+          <h3 class="problem-card__title">Invisible Insights</h3>
+          <p class="problem-card__desc">Important trends and opportunities hidden deep inside your existing data stores.</p>
+          <div class="problem-card__solution">
+            <strong>Solution</strong>
+            Use analytics to uncover patterns that support better strategic decisions.
+          </div>
+        </div>
+
+        <div class="problem-card reveal delay-2">
+          <h3 class="problem-card__title">Repetitive Work</h3>
+          <p class="problem-card__desc">Teams spending valuable time on manual processes that could be automated entirely.</p>
+          <div class="problem-card__solution">
+            <strong>Solution</strong>
+            Design intelligent workflows that reduce manual work and human error.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- ============================================================
        SERVICES
@@ -200,135 +164,111 @@
   <section class="section section--alt" id="solutions">
     <div class="container">
       <div class="section-header reveal">
-        <p class="eyebrow">Our Solutions</p>
+        <span class="eyebrow">Our Solutions</span>
         <h2>What We Build</h2>
-        <p>Technology designed around your business.</p>
+        <p>Technology designed around your business, engineered for reliability.</p>
       </div>
 
       <div class="services-grid">
-        <!-- 01 — Business Intelligence -->
-        <div class="service-card reveal reveal-delay-1">
-          <span class="service-card__number">01</span>
-          <svg class="service-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="4" y="4" width="32" height="32" rx="3"/>
-            <line x1="12" y1="28" x2="12" y2="20"/>
-            <line x1="20" y1="28" x2="20" y2="14"/>
-            <line x1="28" y1="28" x2="28" y2="10"/>
-            <line x1="4" y1="12" x2="36" y2="12"/>
-          </svg>
-          <h3 class="service-card__title">Business Intelligence</h3>
-          <p class="service-card__desc">Transform complex business data into clear dashboards, reports, KPIs, and actionable insights.</p>
+        <div class="service-item reveal delay-1">
+          <span class="service-item__number">01</span>
+          <h3 class="service-item__title">Business Intelligence</h3>
+          <p class="service-item__desc">Transform complex business data into clear dashboards, KPIs, reports, and actionable insights.</p>
+        </div>
+        
+        <div class="service-item reveal delay-2">
+          <span class="service-item__number">02</span>
+          <h3 class="service-item__title">Data Analytics</h3>
+          <p class="service-item__desc">Discover patterns, trends, opportunities, and risks hidden inside your business data.</p>
         </div>
 
-        <!-- 02 — Data Analytics -->
-        <div class="service-card reveal reveal-delay-2">
-          <span class="service-card__number">02</span>
-          <svg class="service-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="4,32 12,22 20,26 28,14 36,8"/>
-            <circle cx="12" cy="22" r="2"/>
-            <circle cx="20" cy="26" r="2"/>
-            <circle cx="28" cy="14" r="2"/>
-            <circle cx="36" cy="8" r="2.5"/>
-          </svg>
-          <h3 class="service-card__title">Data Analytics</h3>
-          <p class="service-card__desc">Discover patterns, trends, opportunities, and risks hidden inside your business data.</p>
+        <div class="service-item reveal delay-3">
+          <span class="service-item__number">03</span>
+          <h3 class="service-item__title">ERP & Business Systems</h3>
+          <p class="service-item__desc">Build centralized systems that connect operations, finance, inventory, sales, and reporting.</p>
         </div>
 
-        <!-- 03 — ERP & Business Systems -->
-        <div class="service-card reveal reveal-delay-3">
-          <span class="service-card__number">03</span>
-          <svg class="service-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="12" y="4" width="16" height="12" rx="2"/>
-            <rect x="4" y="24" width="12" height="12" rx="2"/>
-            <rect x="24" y="24" width="12" height="12" rx="2"/>
-            <line x1="20" y1="16" x2="20" y2="20"/>
-            <line x1="10" y1="20" x2="30" y2="20"/>
-            <line x1="10" y1="20" x2="10" y2="24"/>
-            <line x1="30" y1="20" x2="30" y2="24"/>
-          </svg>
-          <h3 class="service-card__title">ERP &amp; Business Systems</h3>
-          <p class="service-card__desc">Build centralized systems that connect operations, finance, inventory, sales, HR, and management reporting.</p>
+        <div class="service-item reveal delay-1">
+          <span class="service-item__number">04</span>
+          <h3 class="service-item__title">Software Solutions</h3>
+          <p class="service-item__desc">Develop custom digital solutions designed around specific business workflows and requirements.</p>
         </div>
 
-        <!-- 04 — Software Solutions -->
-        <div class="service-card reveal reveal-delay-1">
-          <span class="service-card__number">04</span>
-          <svg class="service-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="4" y="6" width="32" height="28" rx="3"/>
-            <line x1="4" y1="14" x2="36" y2="14"/>
-            <polyline points="14,22 10,26 14,30"/>
-            <polyline points="26,22 30,26 26,30"/>
-            <line x1="22" y1="20" x2="18" y2="32"/>
-          </svg>
-          <h3 class="service-card__title">Software Solutions</h3>
-          <p class="service-card__desc">Develop custom digital solutions designed around specific business workflows and requirements.</p>
+        <div class="service-item reveal delay-2">
+          <span class="service-item__number">05</span>
+          <h3 class="service-item__title">Automation</h3>
+          <p class="service-item__desc">Eliminate repetitive processes through intelligent workflow automation and system integration.</p>
         </div>
 
-        <!-- 05 — Automation -->
-        <div class="service-card reveal reveal-delay-2">
-          <span class="service-card__number">05</span>
-          <svg class="service-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="20" cy="20" r="8"/>
-            <circle cx="20" cy="20" r="2.5"/>
-            <path d="M20 4v6"/>
-            <path d="M20 30v6"/>
-            <path d="M4 20h6"/>
-            <path d="M30 20h6"/>
-            <path d="M8.7 8.7l4.2 4.2"/>
-            <path d="M27.1 27.1l4.2 4.2"/>
-            <path d="M8.7 31.3l4.2-4.2"/>
-            <path d="M27.1 12.9l4.2-4.2"/>
-          </svg>
-          <h3 class="service-card__title">Automation</h3>
-          <p class="service-card__desc">Eliminate repetitive processes through intelligent workflow automation and system integration.</p>
-        </div>
-
-        <!-- 06 — AI & Advanced Analytics -->
-        <div class="service-card reveal reveal-delay-3">
-          <span class="service-card__number">06</span>
-          <svg class="service-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <polygon points="20,4 36,14 36,30 20,36 4,30 4,14"/>
-            <line x1="20" y1="4" x2="20" y2="36"/>
-            <line x1="4" y1="14" x2="36" y2="14"/>
-            <line x1="4" y1="30" x2="36" y2="30"/>
-            <circle cx="20" cy="20" r="3"/>
-          </svg>
-          <h3 class="service-card__title">AI &amp; Advanced Analytics</h3>
-          <p class="service-card__desc">Apply artificial intelligence and predictive analytics to solve practical business problems.</p>
+        <div class="service-item reveal delay-3">
+          <span class="service-item__number">06</span>
+          <h3 class="service-item__title">AI & Advanced Analytics</h3>
+          <p class="service-item__desc">Apply artificial intelligence and predictive analytics to solve practical business problems.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- ============================================================
+       INTERACTIVE DATA VISUALIZATION
+       ============================================================ -->
+  <section class="data-viz-section reveal">
+    <div class="container">
+      <div class="viz-container">
+        <div class="viz-line">
+          <div class="viz-particle"></div>
+        </div>
+        <div class="viz-stage">
+          <div class="viz-step active">
+            <div class="viz-step__title">DATA</div>
+            <div class="viz-step__desc">Raw, unstructured information from across your business.</div>
+          </div>
+          <div class="viz-step active delay-1">
+            <div class="viz-step__title">INSIGHT</div>
+            <div class="viz-step__desc">Structured into clear, visible patterns and metrics.</div>
+          </div>
+          <div class="viz-step active delay-2">
+            <div class="viz-step__title text-gold">ACTION</div>
+            <div class="viz-step__desc">Confidence to make better, faster decisions.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- ============================================================
        HOW WE WORK
        ============================================================ -->
-  <section class="section process" id="services">
+  <section class="section" id="services">
     <div class="container">
-      <div class="section-header reveal" style="text-align: center;">
-        <p class="eyebrow">Our Process</p>
-        <h2 style="margin-bottom: 0.5rem;">From Data to Impact.</h2>
+      <div class="section-header reveal">
+        <span class="eyebrow">Our Process</span>
+        <h2>From Data to Impact.</h2>
       </div>
 
-      <div class="process-grid">
-        <div class="process-step reveal reveal-delay-1">
-          <div class="process-step__number">01</div>
+      <div class="process-wrapper reveal delay-1">
+        <div class="process-line"></div>
+        
+        <div class="process-step">
+          <div class="process-step__marker">01</div>
           <h3 class="process-step__title">Understand</h3>
           <p class="process-step__desc">We understand your business, processes, challenges, and objectives.</p>
         </div>
-        <div class="process-step reveal reveal-delay-2">
-          <div class="process-step__number">02</div>
+
+        <div class="process-step">
+          <div class="process-step__marker">02</div>
           <h3 class="process-step__title">Structure</h3>
           <p class="process-step__desc">We organize your data, workflows, and systems into a reliable digital foundation.</p>
         </div>
-        <div class="process-step reveal reveal-delay-3">
-          <div class="process-step__number">03</div>
+
+        <div class="process-step">
+          <div class="process-step__marker">03</div>
           <h3 class="process-step__title">Build</h3>
           <p class="process-step__desc">We develop the technology, dashboards, analytics, and automation your business needs.</p>
         </div>
-        <div class="process-step reveal reveal-delay-4">
-          <div class="process-step__number">04</div>
+
+        <div class="process-step">
+          <div class="process-step__marker">04</div>
           <h3 class="process-step__title">Optimize</h3>
           <p class="process-step__desc">We continuously improve your systems using data and measurable results.</p>
         </div>
@@ -336,259 +276,199 @@
     </div>
   </section>
 
-
   <!-- ============================================================
        WHY DATAURUM
        ============================================================ -->
   <section class="section section--alt" id="why">
     <div class="container">
-      <div class="why-statement reveal">
-        <h2 class="why-statement__headline">
-          <span class="line">Technology should solve problems.</span>
-          <span class="line">Not create more of them.</span>
-        </h2>
-        <p class="why-statement__text">Dataurum focuses on practical technology, simple interfaces, reliable data, and solutions designed around real business processes.</p>
+      <div class="section-header reveal">
+        <h2>Technology should solve problems.<br>Not create more of them.</h2>
       </div>
 
       <div class="principles-grid">
-        <div class="principle reveal reveal-delay-1">
-          <h3 class="principle__title">Business First</h3>
-          <p class="principle__desc">Technology begins with understanding the business.</p>
+        <div class="principle-item reveal delay-1">
+          <h3 class="principle-item__title">Business First</h3>
+          <p class="principle-item__desc">Technology begins with understanding the business.</p>
         </div>
-        <div class="principle reveal reveal-delay-2">
-          <h3 class="principle__title">Clarity</h3>
-          <p class="principle__desc">Complex data should become simple decisions.</p>
+        <div class="principle-item reveal delay-2">
+          <h3 class="principle-item__title">Clarity</h3>
+          <p class="principle-item__desc">Complex data should become simple decisions.</p>
         </div>
-        <div class="principle reveal reveal-delay-3">
-          <h3 class="principle__title">Precision</h3>
-          <p class="principle__desc">Every system should be reliable, structured, and measurable.</p>
+        <div class="principle-item reveal delay-3">
+          <h3 class="principle-item__title">Precision</h3>
+          <p class="principle-item__desc">Every system should be reliable, structured, and measurable.</p>
         </div>
-        <div class="principle reveal reveal-delay-4">
-          <h3 class="principle__title">Long-Term Thinking</h3>
-          <p class="principle__desc">Build systems that can grow with the business.</p>
+        <div class="principle-item reveal delay-4">
+          <h3 class="principle-item__title">Long-Term Thinking</h3>
+          <p class="principle-item__desc">Build systems that can grow with the business.</p>
         </div>
       </div>
     </div>
   </section>
 
-
   <!-- ============================================================
-       ABOUT
+       ABOUT & CAPABILITIES
        ============================================================ -->
   <section class="section" id="about">
     <div class="container">
       <div class="section-header reveal">
-        <p class="eyebrow">About</p>
+        <span class="eyebrow">About Dataurum</span>
         <h2>Built around one idea.</h2>
       </div>
 
-      <div class="about__headline reveal reveal-delay-1">
-        <span class="line">Data has value.</span>
-        <span class="line">We help businesses realize it.</span>
-      </div>
-      <div class="gold-divider reveal reveal-delay-2"></div>
-      <p class="about__text reveal reveal-delay-2">Dataurum is a technology company focused on helping organizations make better use of their data. Through analytics, business intelligence, ERP systems, custom software, automation, and AI, we build the digital infrastructure that turns information into measurable business outcomes.</p>
-      <p class="about__text reveal reveal-delay-3">The name combines <em>Data</em> with <em>Aurum</em> — the Latin word for gold. It reflects our core philosophy: data, treated with the right precision and intelligence, is one of the most valuable assets a business can have.</p>
-    </div>
-  </section>
-
-
-  <!-- ============================================================
-       CAPABILITIES
-       ============================================================ -->
-  <section class="section section--alt" id="capabilities">
-    <div class="container">
-      <div class="section-header reveal">
-        <p class="eyebrow">Capabilities</p>
-        <h2>What We Work With</h2>
+      <div class="about-grid">
+        <div class="about-content reveal delay-1">
+          <h3 style="font-size: 2.5rem; margin-bottom: 2rem; font-weight: 300;">Data has value.<br>We help businesses realize it.</h3>
+          <div class="gold-divider"></div>
+        </div>
+        <div class="about-content reveal delay-2">
+          <p class="about-text">Dataurum is a technology company focused on helping organizations make better use of their data. Through analytics, business intelligence, ERP systems, custom software, automation, and AI, we build the digital infrastructure that turns information into measurable business outcomes.</p>
+        </div>
       </div>
 
       <div class="capabilities-grid">
-        <div class="capability reveal reveal-delay-1">
-          <h3 class="capability__title">Analytics</h3>
-          <ul class="capability__list">
-            <li class="capability__item">Data Analysis</li>
-            <li class="capability__item">Statistical Analysis</li>
-            <li class="capability__item">Predictive Analytics</li>
-            <li class="capability__item">Forecasting</li>
+        <div class="capability-col reveal delay-1">
+          <h4 class="capability-col__title">Analytics</h4>
+          <ul class="capability-list">
+            <li>Data Analysis</li>
+            <li>Statistical Analysis</li>
+            <li>Predictive Analytics</li>
+            <li>Forecasting</li>
           </ul>
         </div>
-        <div class="capability reveal reveal-delay-2">
-          <h3 class="capability__title">Business Intelligence</h3>
-          <ul class="capability__list">
-            <li class="capability__item">Interactive Dashboards</li>
-            <li class="capability__item">KPI Reporting</li>
-            <li class="capability__item">Data Visualization</li>
-            <li class="capability__item">Management Reporting</li>
+        <div class="capability-col reveal delay-2">
+          <h4 class="capability-col__title">Business Intelligence</h4>
+          <ul class="capability-list">
+            <li>Interactive Dashboards</li>
+            <li>KPI Reporting</li>
+            <li>Data Visualization</li>
+            <li>Management Reporting</li>
           </ul>
         </div>
-        <div class="capability reveal reveal-delay-3">
-          <h3 class="capability__title">Data</h3>
-          <ul class="capability__list">
-            <li class="capability__item">Data Modeling</li>
-            <li class="capability__item">Database Design</li>
-            <li class="capability__item">Data Integration</li>
-            <li class="capability__item">Data Pipelines</li>
+        <div class="capability-col reveal delay-3">
+          <h4 class="capability-col__title">Data</h4>
+          <ul class="capability-list">
+            <li>Data Modeling</li>
+            <li>Database Design</li>
+            <li>Data Integration</li>
+            <li>Data Pipelines</li>
           </ul>
         </div>
-        <div class="capability reveal reveal-delay-4">
-          <h3 class="capability__title">Software</h3>
-          <ul class="capability__list">
-            <li class="capability__item">ERP Systems</li>
-            <li class="capability__item">Custom Applications</li>
-            <li class="capability__item">APIs</li>
-            <li class="capability__item">Workflow Automation</li>
+        <div class="capability-col reveal delay-4">
+          <h4 class="capability-col__title">Software</h4>
+          <ul class="capability-list">
+            <li>ERP Systems</li>
+            <li>Custom Applications</li>
+            <li>APIs</li>
+            <li>Workflow Automation</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-
   <!-- ============================================================
-       CALL TO ACTION
-       ============================================================ -->
-  <section class="section cta-section" id="cta">
-    <div class="container container--narrow">
-      <h2 class="cta__headline reveal">
-        <span class="line">Your data is already valuable.</span>
-        <span class="line">Let's put it to <span class="text-gold">work.</span></span>
-      </h2>
-      <p class="cta__text reveal reveal-delay-1">Whether you need a business intelligence dashboard, an ERP system, automated workflows, or a complete data strategy — let's build something useful.</p>
-      <div class="cta__actions reveal reveal-delay-2">
-        <a href="#contact" class="btn btn-primary btn-large">Start a Conversation <span class="arrow">→</span></a>
-        <a href="#contact" class="btn btn-secondary btn-large">Contact Dataurum</a>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ============================================================
-       CONTACT
+       CTA & CONTACT
        ============================================================ -->
   <section class="section section--alt" id="contact">
     <div class="container">
-      <div class="section-header reveal">
-        <p class="eyebrow">Get in Touch</p>
-        <h2>Let's build something valuable.</h2>
-      </div>
-
-      <div class="contact-grid">
-
-        <!-- Contact Form -->
-        <form class="contact-form reveal" id="contact-form" novalidate>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="Your name" required>
-            </div>
-            <div class="form-group">
-              <label for="company">Company</label>
-              <input type="text" id="company" name="company" placeholder="Your company">
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="your@email.com" required>
-            </div>
-            <div class="form-group">
-              <label for="phone">Phone</label>
-              <input type="tel" id="phone" name="phone" placeholder="+92 xxx xxxxxxx">
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="subject">What can we help you with?</label>
-            <select id="subject" name="subject">
-              <option value="" disabled selected>Select a service</option>
-              <option value="Business Intelligence">Business Intelligence</option>
-              <option value="Data Analytics">Data Analytics</option>
-              <option value="ERP & Business Systems">ERP &amp; Business Systems</option>
-              <option value="Software Solutions">Software Solutions</option>
-              <option value="Automation">Automation</option>
-              <option value="AI & Advanced Analytics">AI &amp; Advanced Analytics</option>
-              <option value="General Inquiry">General Inquiry</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Tell us about your project or challenge..." rows="5" required></textarea>
-          </div>
-          <div id="form-status" class="form-status"></div>
-          <button type="submit" class="btn btn-primary">Send Inquiry <span class="arrow">→</span></button>
-        </form>
-
-        <!-- Contact Info -->
-        <div class="contact-info reveal reveal-delay-2">
-          <div class="contact-info__brand">DATAURUM</div>
-          <div class="contact-info__tagline">Data &nbsp;•&nbsp; Intelligence &nbsp;•&nbsp; Technology</div>
-          <div class="contact-info__divider"></div>
-
-          <div class="contact-info__item">
-            <div class="contact-info__label">Location</div>
-            <div class="contact-info__value">Lahore, Pakistan</div>
+      
+      <div class="contact-wrapper">
+        <div class="contact-info reveal">
+          <span class="eyebrow">Let's Talk</span>
+          <h2 class="contact-info__title">Your data is already valuable.<br>Let's put it to work.</h2>
+          <p class="contact-info__desc">Whether you need a business intelligence dashboard, an ERP system, automated workflows, or a complete data strategy, let's build something useful.</p>
+          
+          <div style="margin-top: 3rem;">
+            <p style="color: var(--color-text-secondary); margin-bottom: 0.5rem; font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.1em;">Location</p>
+            <p style="font-size: 1.125rem;">Lahore, Pakistan</p>
           </div>
 
-          <div class="contact-info__item">
-            <div class="contact-info__label">Email</div>
-            <div class="contact-info__value">
-              <a href="mailto:Hassantariqzaidi133@gmail.com">Hassantariqzaidi133@gmail.com</a>
-            </div>
-          </div>
-
-          <div class="contact-info__item">
-            <div class="contact-info__label">Phone / WhatsApp</div>
-            <div class="contact-info__value">
-              <a href="tel:+923184576091">+92 318 4576091</a>
-            </div>
-          </div>
-
-          <a href="https://wa.me/923184576091?text=Hello%20Dataurum%2C%20I%27d%20like%20to%20discuss%20a%20project." class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
-            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <a href="https://wa.me/923184576091?text=Hello%20Dataurum%2C%20I%27d%20like%20to%20discuss%20a%20project." class="whatsapp-cta" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
             </svg>
-            Message on WhatsApp
+            Chat on WhatsApp &rarr;
           </a>
         </div>
 
+        <div class="contact-form-container reveal delay-2">
+          <form class="contact-form" id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="company">Company</label>
+                <input type="text" id="company" class="form-control">
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" class="form-control">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">What can we help you with?</label>
+              <select id="subject" class="form-control" required>
+                <option value="" disabled selected>Select an area of interest</option>
+                <option value="Business Intelligence">Business Intelligence</option>
+                <option value="Data Analytics">Data Analytics</option>
+                <option value="ERP">ERP</option>
+                <option value="Custom Software">Custom Software</option>
+                <option value="Automation">Automation</option>
+                <option value="AI / Predictive Analytics">AI / Predictive Analytics</option>
+                <option value="Not sure yet">Not sure yet</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" class="form-control" required></textarea>
+            </div>
+
+            <div id="form-status"></div>
+
+            <button type="submit" class="btn btn-primary form-submit">Send Inquiry</button>
+          </form>
+        </div>
       </div>
+
     </div>
   </section>
-
 
   <!-- ============================================================
        FOOTER
        ============================================================ -->
   <footer class="footer">
     <div class="container">
-      <div class="footer__inner">
-        <div class="footer__brand">
-          <div class="footer__logo">
-            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M8 6h12c8.837 0 16 6.268 16 14s-7.163 14-16 14H8V6z" stroke="#F5F5F2" stroke-width="2.5" stroke-linejoin="round" fill="none"/>
-              <rect x="13" y="22" width="4.5" height="9" rx="0.8" fill="#A9823F"/>
-              <rect x="19" y="17" width="4.5" height="14" rx="0.8" fill="#B89244"/>
-              <rect x="25" y="12" width="4.5" height="19" rx="0.8" fill="#C9A45C"/>
-            </svg>
-            DATAURUM
-          </div>
-          <p class="footer__tagline">Turning Data Into Business Value.</p>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="footer-logo">DATAURUM</div>
+          <p style="color: var(--color-text-secondary); font-size: 0.875rem;">Turning Data Into Business Value.</p>
         </div>
-        <div class="footer__links">
-          <a href="#solutions" class="footer__link">Solutions</a>
-          <a href="#services" class="footer__link">Services</a>
-          <a href="#about" class="footer__link">About</a>
-          <a href="#contact" class="footer__link">Contact</a>
+        <div class="footer-nav">
+          <a href="#solutions">Solutions</a>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
         </div>
       </div>
-      <div class="footer__bottom">
-        &copy; 2026 Dataurum. All rights reserved.
+      <div class="footer-bottom">
+        <div>&copy; 2026 Dataurum. All rights reserved.</div>
       </div>
     </div>
   </footer>
 
   <!-- Scripts -->
   <script src="js/main.js"></script>
-
 </body>
 </html>
