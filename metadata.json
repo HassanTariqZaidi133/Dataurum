@@ -1,0 +1,8 @@
+{
+  "name": "Dataurum",
+  "description": "Dataurum builds data analytics, business intelligence, ERP, software, automation, and AI solutions that help businesses turn data into measurable value.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
