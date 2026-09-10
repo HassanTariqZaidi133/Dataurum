@@ -212,7 +212,7 @@ h1, h2, h3, h4, h5, h6 { font-weight: 500; line-height: 1.15; letter-spacing: -0
 }
 .viz-circle-1 { width: 100%; height: 100%; animation: slowSpin 60s linear infinite; }
 .viz-circle-2 { width: 75%; height: 75%; border-color: rgba(201, 164, 92, 0.2); animation: slowSpin 40s linear infinite reverse; }
-.viz-circle-3 { width: 50%; height: 50%; border: 1px dashed var(--color-border); animation: slowSpin 30s linear infinite; }
+.viz-circle-3 { width: 50%; height: 50%; border: 1px dashed var(--color-border); animation: slowSpin 18s linear infinite; will-change: transform; backface-visibility: hidden; }
 .viz-node {
   position: absolute; width: 6px; height: 6px; background: var(--color-accent-gold);
   border-radius: 50%; top: -3px; left: 50%; transform: translateX(-50%);
@@ -241,7 +241,7 @@ h1, h2, h3, h4, h5, h6 { font-weight: 500; line-height: 1.15; letter-spacing: -0
 .viz-label--two { top: 28%; right: 3%; }
 .viz-label--three { bottom: 14%; left: 16%; }
 
-@keyframes slowSpin { from { transform: translate(-50%, -50%) rotate(0deg); } to { transform: translate(-50%, -50%) rotate(360deg); } }
+@keyframes slowSpin { from { transform: translate3d(-50%, -50%, 0) rotate(0deg); } to { transform: translate3d(-50%, -50%, 0) rotate(360deg); } }
 
 /* ============================================================
    BRAND PHILOSOPHY
@@ -320,7 +320,8 @@ h1, h2, h3, h4, h5, h6 { font-weight: 500; line-height: 1.15; letter-spacing: -0
 .viz-particle {
   position: absolute; top: -3px; width: 7px; height: 7px; background: var(--color-accent-gold);
   border-radius: 50%; box-shadow: 0 0 10px var(--color-accent-gold);
-  animation: moveParticle 4s infinite linear;
+  animation: moveParticle 4s linear infinite;
+  will-change: left, top, opacity;
 }
 @keyframes moveParticle {
   0% { left: 0; opacity: 0; }
@@ -509,7 +510,9 @@ select.form-control option:checked {
   
   .viz-stage { flex-direction: column; gap: 3rem; }
   .viz-line { width: 1px; height: 100%; left: 50%; right: auto; top: 0; background: linear-gradient(180deg, transparent, var(--color-border) 20%, var(--color-border) 80%, transparent); }
-  .viz-particle { left: -3px; top: 0; animation-name: moveParticleVertical; }
+  .hero__visual-inner { filter: none; }
+  .viz-circle-3 { animation: slowSpin 12s linear infinite; }
+  .viz-particle { left: -3px; top: 0; animation: moveParticleVertical 4s linear infinite; }
   .viz-step { width: 100%; }
   
   .footer-inner { flex-direction: column; gap: 2rem; }
@@ -532,6 +535,9 @@ select.form-control option:checked {
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
-  .reveal { opacity: 1; transform: none; }
+  *, *::before, *::after { transition-duration: 0.01ms !important; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .viz-circle-1, .viz-circle-2 { animation: none; }
+  .viz-circle-3 { animation-duration: 24s; }
+  .viz-particle { animation-duration: 6s; }
 }
