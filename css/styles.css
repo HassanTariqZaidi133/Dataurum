@@ -133,7 +133,8 @@ h1, h2, h3, h4, h5, h6 { font-weight: 500; line-height: 1.15; letter-spacing: -0
   display: flex; align-items: center; gap: 12px; font-size: 1.25rem;
   font-weight: 700; letter-spacing: 0.1em; color: var(--color-text-primary); z-index: 1001; text-transform: uppercase;
 }
-.nav__logo svg { width: 32px; height: 32px; transition: transform var(--transition-base); }
+.nav__logo-mark { width: 40px; height: 40px; flex: 0 0 40px; object-fit: contain; border-radius: var(--radius-sm); transition: transform var(--transition-base); }
+.nav__logo:hover .nav__logo-mark { transform: scale(1.04); }
 .nav__links { display: flex; align-items: center; gap: 3rem; }
 .nav__link {
   font-size: 0.875rem; font-weight: 500; color: var(--color-text-secondary);
@@ -327,6 +328,12 @@ h1, h2, h3, h4, h5, h6 { font-weight: 500; line-height: 1.15; letter-spacing: -0
   90% { opacity: 1; }
   100% { left: 100%; opacity: 0; }
 }
+@keyframes moveParticleVertical {
+  0% { top: 0; opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { top: calc(100% - 7px); opacity: 0; }
+}
 
 /* ============================================================
    HOW WE WORK (PROCESS)
@@ -501,7 +508,8 @@ select.form-control option:checked {
   .philosophy__text { font-size: 1.125rem; }
   
   .viz-stage { flex-direction: column; gap: 3rem; }
-  .viz-line { width: 1px; height: 100%; left: 50%; top: 0; background: linear-gradient(180deg, transparent, var(--color-border) 20%, var(--color-border) 80%, transparent); }
+  .viz-line { width: 1px; height: 100%; left: 50%; right: auto; top: 0; background: linear-gradient(180deg, transparent, var(--color-border) 20%, var(--color-border) 80%, transparent); }
+  .viz-particle { left: -3px; top: 0; animation-name: moveParticleVertical; }
   .viz-step { width: 100%; }
   
   .footer-inner { flex-direction: column; gap: 2rem; }
