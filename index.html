@@ -397,28 +397,28 @@
             <div class="form-row">
               <div class="form-group">
                 <label for="name">Name</label>
-                <input type="text" id="name" class="form-control" required>
+                <input type="text" id="name" name="name" class="form-control" required>
               </div>
               <div class="form-group">
                 <label for="company">Company</label>
-                <input type="text" id="company" class="form-control">
+                <input type="text" id="company" name="company" class="form-control">
               </div>
             </div>
             
             <div class="form-row">
               <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" id="email" class="form-control" required>
+                <input type="email" id="email" name="email" class="form-control" required>
               </div>
               <div class="form-group">
                 <label for="phone">Phone</label>
-                <input type="tel" id="phone" class="form-control">
+                <input type="tel" id="phone" name="phone" class="form-control">
               </div>
             </div>
 
             <div class="form-group">
               <label for="subject">What can we help you with?</label>
-              <select id="subject" class="form-control" required>
+              <select id="subject" name="subject" class="form-control" required>
                 <option value="" disabled selected>Select an area of interest</option>
                 <option value="Business Intelligence">Business Intelligence</option>
                 <option value="Data Analytics">Data Analytics</option>
@@ -432,7 +432,7 @@
 
             <div class="form-group">
               <label for="message">Message</label>
-              <textarea id="message" class="form-control" required></textarea>
+              <textarea id="message" name="message" class="form-control" required></textarea>
             </div>
 
             <div id="form-status"></div>

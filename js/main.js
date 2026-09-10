@@ -78,26 +78,43 @@ function initContactForm() {
   
   if (!form) return;
 
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const btn = form.querySelector('.form-submit');
     const originalText = btn.textContent;
     btn.textContent = 'Sending...';
     btn.disabled = true;
 
-    // Simulate API call
+    const formData = new FormData(form);
+    formData.append('access_key', 'e8944ad3-ec60-436e-9645-18ed16c1bd78');
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        status.className = 'success';
+        status.textContent = 'Thank you. We’ve received your inquiry.';
+        form.reset();
+      } else {
+        status.className = 'error';
+        status.textContent = data.message || 'Something went wrong. Please try again.';
+      }
+    } catch (error) {
+      status.className = 'error';
+      status.textContent = 'Network error. Please check your connection and try again.';
+    }
+
+    status.style.display = 'block';
+    btn.textContent = originalText;
+    btn.disabled = false;
+    
     setTimeout(() => {
-      status.className = 'success';
-      status.textContent = 'Thank you. We’ve received your inquiry.';
-      status.style.display = 'block';
-      form.reset();
-      
-      btn.textContent = originalText;
-      btn.disabled = false;
-      
-      setTimeout(() => {
-        status.style.display = 'none';
-      }, 5000);
-    }, 1000);
+      status.style.display = 'none';
+    }, 5000);
   });
 }
